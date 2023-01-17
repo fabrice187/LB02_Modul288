@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Fabrice Burgos">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+    <script rel="script" src="main.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<form>
+    <h1>Currency Converter</h1>
+    <div class="amount">
+        <label for="amount">Amount:</label>
+        <input type="text" id="amount" onkeypress="return isNumberKey(event)" name="amount"></div>
+    <br>
+    <div class="fromto">
+        <label for="from">From:</label>
+        <select id="from" name="from"></select>
+        <img src="switch_icon.png" alt="Switch" onclick="switchCurrencies()">
+        <label for="to">To:</label>
+        <select id="to" name="to"></select>
+    </div>
+    <br>
+    <div class="button">
+        <button type="button" onclick="convert()">Convert</button>
+    </div>
+    <br>
+    <div class="result">
+    <label for="result">Result:</label>
+    <input type="text" id="result" name="result" disabled></div>
+</form>
+
+</body>
+</html>
